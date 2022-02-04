@@ -1,0 +1,56 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "b58228cb",
+   "metadata": {},
+   "source": [
+    "# SET - A\n",
+    "\n",
+    "### 1) Write a code to read the dataset (“Iris.csv”). dataset download from (https://archive.ics.uci.edu/ml/datasets/iris) and apply Apriori algorithm."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "31f28134",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "import pandas as pd\n",
+    "from apyori import apriori"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "91ef7af6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "store_data=pd.read_csv('iris.csv',header=None)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cd4c9ed9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "store_data.head()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "88d01808",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "records = []\n",
+    "for i in range(0,300):\n",
+    "    records.append([str(store_data.values[i,j]) for j in range(0,20)])\n"
+   ]
