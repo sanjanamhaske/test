@@ -1,5 +1,5 @@
 import pandas as pd
-dataset = pd.read_csv('city_day.csv')
+dataset = pd.read_csv('C:/Users/rushi/OneDrive/Desktop/Python/DataPreprocessing.csv')
 dataset
 dataset.isnull()
 dataset.isnull().head(10)
